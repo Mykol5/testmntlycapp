@@ -56,43 +56,23 @@
     <div class="cont" id="nwt">
       <div class="first"><h6 id="into"><a id="yup"></a>Notes in progress</h6></div>
       <h6 id="inpt">Client&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETA</h6>
-
       <div id="newt"></div>
-      
-
     </div>
-
-
-    <!--<div id="id02" class="w3-modal">
-      <div class="w3-modal-content">
-        <header class="w3-container w3-teal"> 
-          <span onclick="document.getElementById('id02').style.display='none'" 
-          class="w3-button w3-display-topright">&times;</span>
-          <h5>Note in Progress</h5>
-          <p id="mode"></p>
-          <p id="modu"></p>
-        </header>
-      </div>
-  </div>-->
 
     <script>
       let reat=[]
       function mentalyc(){
         document.getElementById('id01').style.display='none'
 
-        
-        //console.log(reat.length)
         let name= $("#tnt").val()
         
-
         let selection= $("#txt").val()
         let id= reat.length +1
         let data={"id":id,"name":name,"selection":selection}
         reat.push(data)
-        //console.log(reat)
+
         $("#newt").html("")
         reat.forEach((item) => {
-          //console.log(item.id)
 
           let fiud=`
       <div class="second">
@@ -110,18 +90,16 @@
         document.getElementById('nwt').style.display='block'
       }
       function empty(id){
-        //console.log(id)
+        
         reat.forEach((item) => {
           if (item.id === id){
           let pos = reat.indexOf(item)
           reat.splice(pos, 1)
           }
         })
-        //reat.splice((id-1), 1)
         
         $("#newt").html("")
         reat.forEach((item) => {
-          //console.log(item.id)
 
           let fiud=`
         <div class="second">
@@ -136,11 +114,6 @@
         })
       $("#yup").html(reat.length)
       }
-      //function mentaly(){
-       // document.getElementById('id02').style.display='none'
-      //}
     </script>
 </body>
 </html>
-
-<!--<a id="bar">pro</a>-->
