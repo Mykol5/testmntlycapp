@@ -200,6 +200,21 @@ option {
   }
 }
 
+@media screen and (max-width: 767px) {
+  /* Styles for screens less than 767px wide */
+
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for screens between 768px and 1023px wide */
+
+  }
+  
+  @media screen and (min-width: 1024px) {
+  /* Styles for screens 1024px or wider */
+
+  }
+
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 /*html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}*/
